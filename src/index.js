@@ -1,8 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './index.css'
 
-function App () {
- 
+import Menu from './menu/menu'
+
+function App() {
+  return <Menu />
 }
 
-ReactDOM.render(<App></App>, document.querySelector('.one'))
+ReactDOM.render(<App/>, document.querySelector('.one'))
