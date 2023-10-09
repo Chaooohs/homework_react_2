@@ -7,7 +7,7 @@ function Search() {
   return (
     <label className='search'>
       <img className='search__img' src={search} alt="search"></img>
-      <input className='search__input' type="text"  placeholder="Search"></input>
+      <input className='search__input font_md' type="text"  placeholder="Search"></input>
     </label>
   )
 }

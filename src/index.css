@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
+:root {
+  --white: #EFEFEF;
+  --gray: #424444;
+  --gray-light: #C0BFBD;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+}
+
+.font_md {
+font-size: 16px;
+font-weight: 600;
+line-height: 140%;
+  color: #EFEFEF;
 }
