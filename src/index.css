@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
-:root {
-  --white: #EFEFEF;
-  --gray: #424444;
-  --gray-light: #C0BFBD;
+html {
+  --color-background: #242625;
+  --color-text: #C0BFBD;
+  --color-nikname: #EFEFEF;
+  --color-hover: #424444;
+}
+
+html.light {
+  --color-background: #FFFFFF;
+  --color-text: #7C7C7A;
+  --color-nikname: #222133;
+  --color-hover: #F5F5F5;
 }
 
 body {
@@ -12,8 +20,8 @@ body {
 }
 
 .font_md {
-font-size: 16px;
-font-weight: 600;
-line-height: 140%;
-  color: #EFEFEF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  color: var(--color-text);
 }

@@ -1,11 +1,13 @@
 @import url('./menu.css');
 
 .menu {
-  width: 250px;
+  max-width: 250px;
+  width: fit-content;
   height: 100vh;
   box-sizing: border-box;
   padding: 20px 16px 32px;
-  background-color: #242625;
+  background-color: var(--color-background);
+  box-shadow: 1px 0px 0px 0px #DEDEDE;
 
   display: grid;
   grid-template-rows: 1fr 1fr 10fr 1fr 1fr;
@@ -24,21 +26,20 @@
     font-size: 16px;
     font-weight: 700;
     line-height: normal;
-    color: var(--white);
+    color: var(--color-nikname);
   }
 
   & .logo__email {
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
-    color: var(--gray-light);
+    color: var(--color-text);
   }
 
   & .logo__arrow {
     position: absolute;
     right: -27px;
-    top: 27px;
-    transform: translateY(-50%);
+    top: 16px;
   }
 }
 
@@ -49,7 +50,7 @@
   box-sizing: border-box;
   padding: 20px 16px;
   margin-top: 56px;
-  background-color: var(--gray);
+  background-color: var(--color-hover);
 
   & .search__img {
     cursor: pointer;
@@ -60,13 +61,13 @@
     border: none;
     outline: none;
     margin-left: 20px;
-    background-color: #424444;
+    background-color: var(--color-hover);
   }
 
   & .search__input::placeholder {
     font-size: 16px;
     font-weight: 600;
-    color: var(--gray-light);
+    color: var(--color-text);
   }
 }
 
@@ -84,7 +85,7 @@
     text-decoration: none;
 
     &:hover {
-      background-color: var(--gray);
+      background-color: var(--color-hover);
     }
   }
 
@@ -99,9 +100,10 @@
   border-radius: 8px;
   box-sizing: border-box;
   padding: 20px 16px;
+  text-decoration: none;
 
   &:hover {
-    background-color: var(--gray);
+    background-color: var(--color-hover);
   }
 
   & .logout__text {
@@ -123,11 +125,13 @@
   & .radio__box {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 40px;
     height: 20px;
     border-radius: 50px;
-    background-color: var(--gray);
+    background-color: var(--color-hover);
+    box-sizing: border-box;
+    padding: 0px 4px;
   }
 
   & .radio__input {
@@ -140,6 +144,33 @@
 
     & img {
       width: 16px;
+      opacity: 0;
+    }
+
+    & img.block {
+      opacity: 1;
     }
   }
+}
+
+.logo__text,
+.search__input,
+.nav__link,
+.logout__text,
+.radio__img,
+.radio__text {
+  display: none;
+}
+
+.logo__text.open,
+.search__input.open,
+.nav__link.open,
+.logout__text.open,
+.radio__img.open,
+.radio__text.open {
+  display: block;
+}
+
+.logo__arrow.open {
+  transform: scaleX(-1);
 }
