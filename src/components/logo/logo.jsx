@@ -3,7 +3,7 @@ import React from 'react'
 import logo from '../../icon/avatar.png'
 import arrow from '../../icon/arrow.png'
 
-function Logo() {
+export const Logo = () => {
   return (
     <div className='logo'>
       <img className='logo__img' src={logo} alt="logo"></img>
@@ -15,5 +15,3 @@ function Logo() {
     </div>
   )
 }
-
-export default Logo

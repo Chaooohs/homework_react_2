@@ -1,15 +1,13 @@
 import React from 'react'
-import '../menu.css'
 
 import search from '../../icon/search.svg'
+import '../../menu/menu.css'
 
-function Search() {
+export const Search = () => {
   return (
     <label className='search'>
       <img className='search__img' src={search} alt="search"></img>
-      <input className='search__input font_md' type="text"  placeholder="Search"></input>
+      <input className='search__input font_md' type="text" placeholder="Search"></input>
     </label>
   )
 }
-
-export default Search

@@ -1,12 +1,12 @@
 import React from 'react'
-import '../menu.css'
 import changeRadio from '../../method/changeRadio'
 
 import sun from '../../icon/sun.svg'
 import sunRadio from '../../icon/sun-radio.svg'
 import moon from '../../icon/moon.svg'
+import '../../menu/menu.css'
 
-function Radio() {
+export const Radio = () => {
   return (
     <div className='radio'>
       <img className='radio__img' src={sun}></img>
@@ -24,5 +24,3 @@ function Radio() {
     </div>
   )
 }
-
-export default Radio

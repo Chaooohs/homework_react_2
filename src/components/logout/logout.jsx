@@ -2,7 +2,7 @@ import React from 'react'
 
 import logout from '../../icon/logout.svg'
 
-function Logout() {
+export const Logout = () => {
   return (
     <a className='logout' href='#!'>
       <img className='logout__img' src={logout} alt="logout"></img>
@@ -10,5 +10,3 @@ function Logout() {
     </a>
   )
 }
-
-export default Logout

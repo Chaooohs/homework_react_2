@@ -1,5 +1,4 @@
 import React from 'react'
-import '../menu.css'
 
 import home from '../../icon/home.svg'
 import other from '../../icon/other.svg'
@@ -7,7 +6,9 @@ import bell from '../../icon/bell.svg'
 import piece from '../../icon/piece.svg'
 import cube from '../../icon/cube.svg'
 
-function Nav() {
+import '../../menu/menu.css'
+
+export const Nav = () => {
   return (
     <nav>
       <div className='nav'>
@@ -35,5 +36,3 @@ function Nav() {
     </nav>
   )
 }
-
-export default Nav
